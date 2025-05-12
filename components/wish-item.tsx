@@ -23,7 +23,7 @@ export function WishItem({ item }: { item: Item }) {
         />
       </div>
       <div className='bg-slate-100 p-4'>
-        <h3 className='mb-2 text-lg font-medium'>{item.name}</h3>
+        <h2 className='mb-2 text-lg font-medium'>{item.name}</h2>
         {item.description && <p className='mb-3 text-sm text-gray-600'>{item.description}</p>}
         <div className='flex items-center justify-between'>
           <span className='text-xl font-bold'>

@@ -37,11 +37,13 @@ export default async function RoomPage({ params }: { params: { room: string } })
         </p>
       </header>
 
-      <div className='grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3'>
+      <ul className='grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3'>
         {wishList.items.map((item) => (
-          <WishItem key={item.id} item={item} />
+          <li key={item.id}>
+            <WishItem item={item} />
+          </li>
         ))}
-      </div>
+      </ul>
 
       <div className='mx-auto mt-16 max-w-2xl rounded-lg bg-gray-50 p-6'>
         <h2 className='mb-4 text-center text-xl font-semibold'>Como contribuir</h2>
@@ -51,10 +53,8 @@ export default async function RoomPage({ params }: { params: { room: string } })
         </p>
         <div className='rounded border bg-white p-4 text-center'>
           <p>
-            <strong>Nome:</strong> Seu Nome Completo
-          </p>
-          <p>
-            <strong>PIX:</strong> exemplo@email.com
+            <strong>PIX:</strong>{' '}
+            <span className='select-all'>4be85c63-3aa7-40c1-919a-2ac2d086b2ac</span>
           </p>
         </div>
       </div>

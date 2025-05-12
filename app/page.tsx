@@ -106,7 +106,8 @@ export default function Home() {
       <footer className='mt-20 border-t pt-8 text-center text-gray-600'>
         <p>Obrigado por ajudar!</p>
         <p className='mt-2'>
-          <strong>PIX:</strong> exemplo@email.com
+          <strong>PIX:</strong>{' '}
+          <span className='select-all'>4be85c63-3aa7-40c1-919a-2ac2d086b2ac</span>
         </p>
       </footer>
     </div>
